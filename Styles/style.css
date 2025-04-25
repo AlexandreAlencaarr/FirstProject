@@ -1,0 +1,39 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(90, 72, 72);
+    width: 600px;
+    padding: 0px 20px 20px 20px;
+}
+
+html{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    scrollbar-width:none
+}
+
+img{
+    width: 30%;
+    border: 3px solid rgb(0, 0, 0)
+
+}
+
+button{
+    border-radius: 5%;
+    align-items: center;
+    border: 5px solid black;
+}
+button:hover{
+    background-color: red;
+    transform:scale(1.05);
+    transition: 0.3;
+}
+
+a{
+    color:black; 
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color:black;
+    text-shadow: 3px 3px 1px rgb(58, 55, 55);
+  }
