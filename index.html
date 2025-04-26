@@ -2,26 +2,57 @@
 <script src="JS/script.js"></script>
 <link rel="stylesheet" href="Styles/style.css">
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Pagina Teste</title> 
-    </head>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pagina Teste</title>
+</head>
 
 
-    <body>
-        <h1>Coisas Tremendas</h1>
-        <img src="Imagens/Dog.webp" alt="Imagem Teste">
-        <p>Incrivel como:</p>
-        <button onclick="increaseCounter()">Click me</button> 
-<p id="counter">0</p>
-        
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
-        
-        <video width="600" controls>
-            <source src="Video/video/0000-2326.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-    </body>
+<body>
+    <h1>Coisas Coisas</h1>
+    <img src="Imagens/img1.webp" alt="Imagem Teste">
+    <p>Incrivel como:</p>
+    <button onclick="increaseCounter()">Click me</button>
+    <p id="counter">0</p>
+
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."
+    </p>
+    <h3>Incrível Coletanêa</h3>
+    <div class="carousel">
+        <button id="Botao1" onclick="prev()">Prev</button>
+        <img id="carousel-img" src="Imagens/img1.webp" alt="Image" width="500">
+        <button id="Botao2" onclick="next()">Next</button>
+    </div>
+
+    <script>
+        setInterval(()=>{
+            next()
+        },3000)
+        const images = ["Imagens/img1.webp", "Imagens/img2.webp", "Imagens/img3.webp"];
+        let index = 0;
+const a = () => {
+
+}
+        function showImage() {
+            document.getElementById("carousel-img").src = images[index];
+        }
+
+        function next() {
+            index = (index + 1) % images.length;
+            showImage();
+        }
+
+        function prev() {
+            index = (index - 1 + images.length) % images.length;
+            showImage();
+        }
+    </script>
+</body>
+
 </html>

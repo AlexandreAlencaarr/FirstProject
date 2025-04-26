@@ -20,8 +20,17 @@ img{
 button{
     border-radius: 5%;
     align-items: center;
-    border: 5px solid black;
+    border: 3px solid black;
+
 }
+
+#Botao1{
+    margin-right: 20px;
+} 
+#Botao2{
+    margin-left: 20px;
+}
+
 button:hover{
     background-color: red;
     transform:scale(1.05);
@@ -37,3 +46,6 @@ h1 {
     color:black;
     text-shadow: 3px 3px 1px rgb(58, 55, 55);
   }
+h3{
+    text-shadow: 3px 3px 1px rgb(58, 55, 55) ;
+}
