@@ -2,17 +2,37 @@
 <script src="JS/script.js"></script>
 <link rel="stylesheet" href="Styles/style.css">
 <html lang="en-US">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Site do Alex</title>
+    </head>
+    
+    <body>
+        <form id="form">
+            <input required type="email" name="email" placeholder="E-mail">
+            <input required type="password" name="password" placeholder="Senha">
+            <button type="submit">Enviar</button>
+          </form>
+          
+          <script>
+            const form = document.getElementById("form");
+          
+            form.addEventListener("submit", function(event) {
+              event.preventDefault();
+              const email = form.email.value; // Get value of email
+              const password = form.password.value; // Get value of password
+              console.log("Email:", email); // Log email
+              console.log("Password:", password); // Log password
+            });
+          </script>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Pagina Teste</title>
-</head>
+        <h1>Coisas Coisas</h1>
+        <a href="https://www.youtube.com" target="_blank">
+            <img id="Dog" src="Imagens/img1.webp" alt="Imagem Teste">
+        </a>
 
-
-<body>
-    <h1>Coisas Coisas</h1>
-    <img src="Imagens/img1.webp" alt="Imagem Teste">
     <p>Incrivel como:</p>
     <button onclick="increaseCounter()">Click me</button>
     <p id="counter">0</p>
@@ -23,12 +43,14 @@
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum."
     </p>
-    <h3>Incrível Coletanêa</h3>
+    
+    <h3>Incrível!</h3>
     <div class="carousel">
         <button id="Botao1" onclick="prev()">Prev</button>
         <img id="carousel-img" src="Imagens/img1.webp" alt="Image" width="500">
         <button id="Botao2" onclick="next()">Next</button>
     </div>
+    
 
     <script>
         setInterval(()=>{
