@@ -1,76 +1,104 @@
-body{
+body {
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 50px;
     margin-top: 50px;
     border: 10px solid rgb(68, 67, 67);
     background-color: rgb(109, 103, 103);
-    width: 0 auto;
 }
 
-canvas{
-    height: 200px;
-    width: 300px;
-    border:2px solid rgb(39, 32, 32);
+html {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    scrollbar-width: none
+}
+
+canvas {
+    height: 70%;
+    width: 70%;
+    border: 2px solid rgb(39, 32, 32);
     border-radius: 3px;
 }
 
- #Dog:hover{
-    background-color: red;
-    transform:scale(1.05);
-    transition: 0.3;
-}
-
-#Dog{
-    min-height: 60px;
-    min-width: 60px;
-    max-width: 100px;
-    max-height: 100px;
-    height: min-content;
-    width: min-content;
-}
-
-html{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    scrollbar-width:none
-}
-
-img{
+img {
     width: 30%;
-    border: 3px solid rgb(0, 0, 0)
-    
+    border: 3px solid rgb(0, 0, 0);
+
+    &#carousel-img {
+        height: -webkit-fill-available;
+        width: -webkit-fill-available;
+        min-height: 100px;
+        min-width: 100px;
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    &#Dog {
+        height: -webkitfill-available;
+        width: -webkit-fill-available;
+        min-height: 100px;
+        min-width: 100px;
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    &#Dog:hover {
+        background-color: red;
+        transform: scale(1.05);
+        transition: 0.3;
+    }
 }
 
-button{
-    border-radius: 5%;
+.carousel {
+    display: flex;
     align-items: center;
+    gap: 10px;
+    flex-direction: column;
+
+    .teste {
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+
+        #Botao1 {
+            flex-grow: 1;
+        }
+
+        #Botao2 {
+            flex-grow: 1;
+        }
+    }
+}
+
+button {
+    border-radius: 5%;
     border: 3px solid black;
 
+    &#Botao1,
+    &#Botao2 {
+        margin: 0;
+    }
 }
 
-#Botao1{
-    margin-right: 20px;
-} 
-#Botao2{
-    margin-left: 20px;
-}
-
-button:hover{
+button:hover {
     background-color: red;
-    transform:scale(1.05);
+    transform: scale(1.05);
     transition: 0.3;
 }
 
-a{
-    color:rgb(255, 5, 5); 
+a {
+    color: rgb(255, 5, 5);
 }
+
 h1 {
     margin: 0;
     padding: 20px 0;
-    color:black;
+    color: black;
     text-shadow: 3px 3px 1px rgb(58, 55, 55);
-  }
-h3{
-    text-shadow: 3px 3px 1px rgb(58, 55, 55) ;
+}
+
+h3 {
+    text-shadow: 3px 3px 1px rgb(58, 55, 55);
 }

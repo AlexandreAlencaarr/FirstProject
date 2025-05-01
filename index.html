@@ -2,68 +2,64 @@
 <script src="JS/script.js"></script>
 <link rel="stylesheet" href="Styles/style.css">
 <html lang="en-US">
-    
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Site do Alex</title>
-    </head>
-    
-    <body>
-        <canvas width="300" height="200"></canvas>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Site do Alex</title>
+</head>
+
+<body>
+    <canvas width="10%" height="10%"></canvas>
     <script src="script.js"></script>
 
-        <form id="form">
-            <input required type="email" name="email" placeholder="E-mail">
-            <input required type="password" name="password" placeholder="Senha">
-            <button type="submit">Enviar</button>
-          </form>
-          
-          <script>
-            const form = document.getElementById("form");
-          
-            form.addEventListener("submit", function(event) {
-              event.preventDefault();
-              const email = form.email.value; // Get value of email
-              const password = form.password.value; // Get value of password
-              console.log("Email:", email); // Log email
-              console.log("Password:", password); // Log password
-            });
-          </script>
+    <form id="form">
+        <input required type="email" name="email" placeholder="E-mail">
+        <input required type="password" name="password" placeholder="Senha">
+        <button type="submit">Enviar</button>
+    </form>
 
-        <h1>Coisas Coisas</h1>
-        <a href="" target="_blank">
-            <img id="Dog" src="Imagens/img1.webp" alt="Imagem Teste">
-        </a>
+    <script>
+        const form = document.getElementById("form");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const email = form.email.value;
+            const password = form.password.value;
+            console.log("Email:", email);
+            console.log("Password:", password);
+        });
+    </script>
+
+    <h1>Coisas Coisas</h1>
+    <a href="" target="_blank">
+        <img id="Dog" src="Imagens/img1.webp" alt="Imagem Teste">
+    </a>
 
     <p>Incrivel como:</p>
     <button onclick="increaseCounter()">+2</button>
     <p id="counter">0</p>
 
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum."
-    </p>
-    
     <h3>Incrível!</h3>
-    <div class="carousel">
-        <button id="Botao1" onclick="prev()">Prev</button>
-        <img id="carousel-img" src="Imagens/img1.webp" alt="Image" width="500">
-        <button id="Botao2" onclick="next()">Next</button>
-    </div>
     
+    <div class="carousel">
+        <img id="carousel-img" src="Imagens/img1.webp" alt="Image" height="200px" width="200px">
+        <div class="teste">
+            <button id="Botao1" onclick="prev()">Prev</button>
+            <button id="Botao2" onclick="next()">Next</button>
+        </div>
+    </div>
+
 
     <script>
-        setInterval(()=>{
+        setInterval(() => {
             next()
-        },3000)
+        }, 3000)
         const images = ["Imagens/img1.webp", "Imagens/img2.webp", "Imagens/img3.webp", "Imagens/img4.webp", "Imagens/img5.webp"];
         let index = 0;
-const a = () => {
+        const a = () => {
 
-}
+        }
         function showImage() {
             document.getElementById("carousel-img").src = images[index];
         }
